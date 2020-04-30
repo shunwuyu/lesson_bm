@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./rank.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 className="offical">官方榜</h1>
+      <ul class="rank-list">
+        <li class="rank-item">
+          <div className="img_wrapper">
+            <img src="https://p2.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg" alt=""/>
+            <div className="decorate"></div>
+            <span className="update_frequecy">每天更新</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+  fetch('http://localhost:3000/toplist/detail')
+  .then(data => data.json())
+  .then(data => {
+    console.log(data);
+  })
+  </script>
+</body>
+</html>

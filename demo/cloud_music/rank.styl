@@ -1,0 +1,64 @@
+$font-size-m = 14px
+$font-color-desc = #2E3030
+$background-color = #f2f3f4
+$border-color = #e4e4e4
+$font-size-ss = 10px
+$font-color-light
+
+.container
+  position fixed
+  top 90px
+  bottom 0
+  width 100%
+  .offical, .global
+    margin: 10px 5px;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: $font-size-m;
+    color: $font-color-desc;
+
+.list
+  margin-top: 10px;
+  padding: 0 5px;
+  display: "flex"
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: $background-color;
+  &::after{
+    content:"";
+    display:block;
+    width: 32vw;
+  }
+
+.rank-item
+  display flex
+  padding: 3px 0;
+  border-bottom: 1px solid $border-color;
+  .img_wrapper{
+    width: "27vw"
+    height: "27vw"
+    border-radius: 3px;
+    position: relative;
+    .decorate {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 35px;
+      border-radius: 3px;
+      background: linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,43%,.4));
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+    }
+    .update_frequecy{
+      position: absolute;
+      left: 7px;
+      bottom: 7px;
+      font-size: $font-size-ss
+      color: $font-color-light
+  
+
+
